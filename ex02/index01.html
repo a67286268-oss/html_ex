@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>블로그 만들기</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      background-color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .wrapper {
+      width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .blog-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 0.5px solid #eee;
+    }
+
+    .blog-name {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      font-weight: 4px;
+    }
+
+	.card-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 250px);
+		grid-template-rows: repeat(4, 300px);
+		gap: 5px;
+	}
+  </style>
+  <body>
+    <div class="wrapper">
+      <!-- 헤더 영역 -->
+      <header class="blog-header">
+        <h1 class="blog-name">Green's Blog</h1>
+        <a href="#" class="op1">⚙️</a>
+      </header>
+
+      <!-- 메인 영역 -->
+      <div class="main-container">
+        <!-- 사이드바 -->
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <span class="sidebar-title">전체보기</span>
+            <a href="#">⚙️</a>
+          </div>
+          <nav class="side-tag">
+            <a href="#">Python (12)</a>
+            <a href="#">Java (2)</a>
+            <a href="#">iOS (8)</a>
+            <a href="#">소프트웨어 자료 (26)</a>
+            <a href="#">자료구조 (8) <span class="badge-n">N</span></a>
+            <a href="#">리눅스 (8)</a>
+            <a href="#">Git (4)</a>
+            <a href="#">자기개발 (3)</a>
+            <a href="#" class="active">경영전략 (20)</a>
+            <a href="#">리더쉽 (7)</a>
+          </nav>
+        </aside>
+
+        <!-- 메인 콘텐츠 영역 -->
+        <main class="content-area">
+          <div class="content-header">
+            <h2 class="category-title">경영전략<span>20</span></h2>
+            <a href="#" class="write-btn">📝</a>
+          </div>
+
+          <!-- 4x4 리스트 영역 -->
+          <div class="card-grid">
+            <!-- 1행 -->
+            <div class="card">
+              <div class="card-img">
+                <span>
+                  <img src="https://picsum.photos/seed/159/150" alt="" />
+                </span>
+              </div>
+              <div class="card-ment">
+                <h3 class="card-title">
+                  팬덤 확보에 성공한 4세대 걸그룹의 차별화 전략
+                </h3>
+                <p class="card-day">2022. 12. 30.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <span
+                  ><img src="https://picsum.photos/seed/158/150" alt=""
+                /></span>
+              </div>
+              <div class="card-ment">
+                <h3 class="card-title">불황 속에서도 기업 성장 꾀하는 전략</h3>
+                <p class="card-day">2022. 12. 8.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <span
+                  ><img src="https://picsum.photos/seed/157/150" alt=""
+                /></span>
+              </div>
+              <div class="card-ment">
+                <h3 class="card-title">
+                  CSV 실행, 전략적으로 접근이 필요하다.
+                </h3>
+                <p class="card-day">2022. 12. 7.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <span
+                  ><img src="https://picsum.photos/seed/156/150" alt=""
+                /></span>
+              </div>
+              <div class="card-ment">
+                <h3 class="card-title">
+                  뉴노멀 시대 사무실, 작은 변화로 직원 만족감 극대화하는 방법의
+                  새로움 방법은 논한다...
+                </h3>
+                <p class="card-day">2022. 12. 2.</p>
+              </div>
+            </div>
+
+            <!-- 2행 -->
+            <div class="card">
+              <div class="card-img">
+                <span
+                  ><img src="https://picsum.photos/seed/155/150" alt=""
+                /></span>
+              </div>
+              <div class="card-ment">
+                <h3 class="card-title">
+                  팬덤 확보에 성공한 4세대 걸그룹의 차별화
+                </h3>
+                <p class="card-day">2022. 12. 30.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <span
+                  ><img src="https://picsum.photos/seed/154/150" alt=""
+                /></span>
+              </div>
+              <div class="card-ment">
+                <h3 class="card-title">불황 속에서도 기업 성장 꾀하는 전략</h3>
+                <p class="card-day">2022. 12. 8.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <span
+                  ><img src="https://picsum.photos/seed/153/150" alt=""
+                /></span>
+              </div>
+              <div class="card-ment">
+                <h3 class="card-title">
+                  CSV 실행, 전략적으로 접근이 필요하다.
+                </h3>
+                <p class="card-day">2022. 12. 7.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <span
+                  ><img src="https://picsum.photos/seed/152/150" alt=""
+                /></span>
+              </div>
+              <div class="card-ment">
+                <h3 class="card-title">뉴노멀 시대 사무실</h3>
+                <p class="card-day">2022. 12. 2.</p>
+              </div>
+            </div>
+
+            <!-- 3행 -->
+            <div class="card">
+              <div class="card-img">
+                <span
+                  ><img src="https://picsum.photos/seed/151/150" alt=""
+                /></span>
+              </div>
+              <div class="card-ment">
+                <h3 class="card-title">
+                  팬덤 확보에 성공한 4세대 걸그룹의 차별화
+                </h3>
+                <p class="card-day">2022. 12. 30.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <span
+                  ><img src="https://picsum.photos/seed/141/150" alt=""
+                /></span>
+              </div>
+              <div class="card-ment">
+                <h3 class="card-title">불황 속에서도 기업 성장 꾀하는 전략</h3>
+                <p class="card-day">2022. 12. 8.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <span
+                  ><img src="https://picsum.photos/seed/160/150" alt=""
+                /></span>
+              </div>
+              <div class="card-ment">
+                <h3 class="card-title">
+                  CSV 실행, 전략적으로 접근이 필요하다.
+                </h3>
+                <p class="card-day">2022. 12. 7.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <span
+                  ><img src="https://picsum.photos/seed/10/150" alt=""
+                /></span>
+              </div>
+              <div class="card-ment">
+                <h3 class="card-title">뉴노멀 시대 사무실</h3>
+                <p class="card-day">2022. 12. 2.</p>
+              </div>
+            </div>
+
+            <!-- 4행 -->
+            <div class="card">
+              <div class="card-img">
+                <span
+                  ><img src="https://picsum.photos/seed/110/150" alt=""
+                /></span>
+              </div>
+              <div class="card-ment">
+                <h3 class="card-title">
+                  팬덤 확보에 성공한 4세대 걸그룹의 차별화
+                </h3>
+                <p class="card-day">2022. 12. 30.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <span
+                  ><img src="https://picsum.photos/seed/120/150" alt=""
+                /></span>
+              </div>
+              <div class="card-ment">
+                <h3 class="card-title">불황 속에서도 기업 성장 꾀하는 전략</h3>
+                <p class="card-day">2022. 12. 8.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <span
+                  ><img src="https://picsum.photos/seed/130/150" alt=""
+                /></span>
+              </div>
+              <div class="card-ment">
+                <h3 class="card-title">
+                  CSV 실행, 전략적으로 접근이 필요하다.
+                </h3>
+                <p class="card-day">2022. 12. 7.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <span
+                  ><img src="https://picsum.photos/seed/140/150" alt=""
+                /></span>
+              </div>
+              <div class="card-ment">
+                <h3 class="card-title">뉴노멀 시대 사무실</h3>
+                <p class="card-day">2022. 12. 2.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 하단 페이지 -->
+          <footer class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#" class="next">다음 ＞</a>
+          </footer>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
